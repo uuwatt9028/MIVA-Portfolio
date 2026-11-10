@@ -8,6 +8,8 @@
     <meta name="theme-color" content="#102b3f">
     <title>Ubong Mfon Uwatt | Computer Science Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -46,7 +48,8 @@
             </div>
             <div class="hero-visual">
                 <div class="portrait-frame">
-                    <img src="assets/profile.jpg" alt="Portrait of Ubong Mfon Uwatt" width="360" height="450">
+                    <!-- Added loading="lazy" and explicit dimensions for speed and layout stability -->
+                    <img src="assets/profile.jpg" alt="Portrait of Ubong Mfon Uwatt" width="360" height="450" loading="lazy">
                     <div class="portrait-tag"><span class="tag-dot"></span> Learning. Building. Growing.</div>
                 </div>
                 <div class="orbit orbit-one"></div>
@@ -180,7 +183,8 @@
             <a href="#home" class="back-top">Back to top ↑</a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- Added defer attribute so script doesn't block DOM parsing -->
+    <script src="script.js" defer></script>
 </body>
 
 </html>
